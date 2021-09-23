@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+   
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+  margin:0;
+  padding:0; 
+  font-family: 'Poppins';
+}
+body{
+  background-color: lavenderblush; 
+}
+.start{
+  padding: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+h1{
+  color: purple;
+  font-size: 45px;
+  font-weight: 600;
+  position: relative;
+  left: 480px;
+
+}
+button{
+  background-color: lightcoral;
+  color: rgb(206, 35, 206);
+  font-size: 25px;
+  padding: 5px 10px;
+  margin-top: 20px;
+  font-weight: 400;
+  border-radius: 6px;
+  border: 2px solid rgb(206, 35, 206);
+  transition: transform .4s linear; 
+  box-shadow: 0 3px 10px rgb(0 ,0, 0, 0.8);
+  position: relative;
+ right: 900px;
+ top: -10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button:hover{
+  color: rgb(0, 0, 0);
+  background: rgb(117, 117, 114);
+  border: 2px solid black;
+  cursor: pointer;
 }
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  z-index: 10;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.info{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width:180px;
+  height:250px;
+  padding:1rem;
+  margin-left:4rem;
+  margin-bottom: 1rem;
+  border:2px solid rgb(251,223,113);
+  border-radius: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+  transition: transform .4s linear; 
+  box-shadow: 0 3px 10px rgb(0 ,0, 0, 0.8);
+  background-color: purple;
+  
 }
-
-.App-link {
-  color: #61dafb;
+.info:hover{
+  transform:scale(1.1);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.info img{
+  border-radius: 100px;
+}
+.info .name{
+  color:black;
+  font-size: 1.4rem;
+  font-weight: 500;
+  
+}
+.info p{
+  color:rgb(251,223,113);
+  font-size:0.9rem;
+  font-weight: 500;
 }
